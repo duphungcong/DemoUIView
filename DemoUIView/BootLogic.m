@@ -16,7 +16,10 @@
     MainScreen* mainScreen = [[MainScreen alloc] initWithStyle:UITableViewStyleGrouped];
     //--------- From this line, please customize your menu data -----------
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
-                                    @{TITLE: @"UISlider", CLASS: @"DemoSlider"}
+                                    @{TITLE: @"Demo UISlider", CLASS: @"DemoSlider"},
+                                    @{TITLE: @"Slider 1", CLASS: @"BackgroundSlider"},
+                                    @{TITLE: @"Slider 2", CLASS: @"CaptionSlider"},
+                                    @{TITLE: @"Slider 3", CLASS: @"UISliderThree"}
                           ]};
     NSDictionary* intermediate = @{SECTION: @"Intermediate", MENU: @[
                                     @{TITLE: @"Array", CLASS: @"InterB"},

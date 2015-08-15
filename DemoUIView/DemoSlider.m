@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"view = %2.1f %2.1f", self.view.bounds.size.width, self.view.bounds.size.height);
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.2
                                               target:self
                                             selector:@selector(onTimer)
