@@ -1,18 +1,18 @@
 //
-//  BackgroundSlider.m
+//  Slider1.m
 //  DemoUIView
 //
-//  Created by du phung cong on 8/15/15.
+//  Created by du phung cong on 8/23/15.
 //  Copyright (c) 2015 duphungcong. All rights reserved.
 //
 
-#import "BackgroundSlider.h"
+#import "Slider1.h"
 
-@interface BackgroundSlider ()
+@interface Slider1 ()
 
 @end
 
-@implementation BackgroundSlider
+@implementation Slider1
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,7 @@
     sliderBackgroundFrame.origin = CGPointMake(50.0, 200.0);
     sliderBackground.frame = sliderBackgroundFrame;
     sliderBackground.center = self.view.center;
-    sliderBackground.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"slider-bg.jpg"]];
+    sliderBackground.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"slider1-slider-bg.jpg"]];
     
     [self.view addSubview:sliderBackground];
     
@@ -37,22 +37,23 @@
     
     [sliderBackground addSubview:slider];
     
-    [slider setThumbImage:[UIImage imageNamed:@"thumb.png"] forState:UIControlStateNormal];
+    [slider setThumbImage:[UIImage imageNamed:@"slider1-thumb.png"] forState:UIControlStateNormal];
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, 0, 5);
-    UIImage* maxTrack = [[UIImage imageNamed: @"track.png"] resizableImageWithCapInsets:inset];
-    UIImage* minTrack = [[UIImage imageNamed: @"track.png"] resizableImageWithCapInsets:inset];
+    UIImage* maxTrack = [[UIImage imageNamed: @"slider1-track.png"] resizableImageWithCapInsets:inset];
+    UIImage* minTrack = [[UIImage imageNamed: @"slider1-track.png"] resizableImageWithCapInsets:inset];
     
     [slider setMaximumTrackImage:maxTrack forState:UIControlStateNormal];
     [slider setMinimumTrackImage:minTrack forState:UIControlStateNormal];
     
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"vertical-bg.jpg"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"slider1-screen-bg.jpg"] drawInRect:self.view.bounds];
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
     //viewA.transform = CGAffineTransformMakeRotation(-M_PI_2);
+
 }
 
 - (void)didReceiveMemoryWarning {

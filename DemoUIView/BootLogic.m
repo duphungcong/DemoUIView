@@ -17,8 +17,8 @@
     //--------- From this line, please customize your menu data -----------
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
                                     @{TITLE: @"Demo UISlider", CLASS: @"DemoSlider"},
-                                    @{TITLE: @"Slider 1", CLASS: @"BackgroundSlider"},
-                                    @{TITLE: @"Slider 2", CLASS: @"CaptionSlider"},
+                                    @{TITLE: @"Slider 1", CLASS: @"Slider1"},
+                                    @{TITLE: @"Slider 2", CLASS: @"Slider2"},
                                     @{TITLE: @"Slider 3", CLASS: @"UISliderThree"}
                           ]};
     NSDictionary* intermediate = @{SECTION: @"Intermediate", MENU: @[
