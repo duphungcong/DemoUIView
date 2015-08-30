@@ -95,9 +95,6 @@
 
     label.attributedText = [self showTimeWithStyle:self.value];
     label.textAlignment = NSTextAlignmentCenter;
-    //label.text = [NSString stringWithFormat:@"%2.1f", self.value];
-    //label.font = [UIFont boldSystemFontOfSize:14.0f];
-    //label.textColor = [UIColor colorWithRed:0.0 green:0.0 blue:6.0 alpha:0.5];
     label.tag = 1;
     
     // set remain time run
