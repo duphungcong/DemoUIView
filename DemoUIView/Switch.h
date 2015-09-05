@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomizedSwitch.h"
+#import "CustomSwitch.h"
 
 @interface Switch : UIViewController
 

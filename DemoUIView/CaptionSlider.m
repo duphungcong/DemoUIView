@@ -14,7 +14,7 @@
     //NSAttributedString* attrString;
 }
 
--(id)initWithFrame:(CGRect)frame
+-(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -24,21 +24,6 @@
     return self;
 }
 
--(id)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self constructSlider];
-    }
-    return self;
-}
-
--(id)init {
-    self = [super init];
-    if (self) {
-        [self constructSlider];
-    }
-    return self;
-}
 
 -(BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touchPoint = [touch locationInView:self];

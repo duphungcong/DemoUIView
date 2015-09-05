@@ -7,18 +7,24 @@
 //
 
 #import "Switch.h"
-
+#import "CustomSwitch.h"
 @interface Switch ()
 
 @end
 
 @implementation Switch
+{
+    CustomSwitch *mySwitch;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    CustomizedSwitch* customizedSwitch = [[CustomizedSwitch alloc] initWithFrame:CGRectMake(30.0, 250.0, 125.0, 49.0)];
-    [self.view addSubview:customizedSwitch];
+    mySwitch = [[CustomSwitch alloc] initWithFrame:CGRectMake(0, 0, 104, 46)];
+    mySwitch.center = CGPointMake(self.view.bounds.size.width * 0.5, self.view.bounds.size.height * 0.4);
+    [self.view addSubview:mySwitch];
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
